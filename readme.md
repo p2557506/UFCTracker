@@ -24,3 +24,6 @@ You **must** include references (including links) to any external resources/vide
 
 >We don't expect there to be much left of the original content in these files once you are done.
 It should be all your own code.
+
+Short project description:
+In this project I plan to create a UFC website that will allow anyone to get up to date with relevant information regarding the UFC. For example, the website will show upcoming fight cards, ranked fighters in each division and upcoming prospects to look out for in the future.

@@ -9,14 +9,27 @@ This means the default styles are for the smallest mobile size.
 /* Multi-line rulesets must use whitespace for indentation consistently. */
 body {
 	/* note the indentation here */
-	background-color: #5bf;
-	color: #024;
+	background-color: white;
+	color: red;
+	margin: 0;
+	padding: 0.1em  1em 1em 1em;
+
+
 }
 
-/* One-liners are fine for very simple rulesets. */
-h1 { font-family: sans-serif;}
+header{
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiLWHQQWudyVLthu05pSeBE1Lv3MJI3V9Q7g&usqp=CAU);
+  background-size: cover;
+	overflow: auto;
 
-/* 
+}
+
+
+
+/* One-liners are fine for very simple rulesets. */
+h1 { font-family: serif;}
+
+/*
 You will probably need at least two media queries to handle larger screens.
 Your queries should be configured to work with your content
 */
@@ -28,3 +41,7 @@ Your queries should be configured to work with your content
 We don't want to see a min-width of 457px in your code
 This was chosen to match the template content.
 */
+
+body main{
+	flex-direction: row;
+}
