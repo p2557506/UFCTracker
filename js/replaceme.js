@@ -9,3 +9,8 @@
 // We like to see what you can do. Be creative.
 
 console.log("Obviously, you should replace this with some event handlers.")
+
+menuToggler.addEventListener('click', ev => {
+  menu.classList.toggle('open');
+  console.log("Fix")
+});

@@ -7,41 +7,130 @@ This means the default styles are for the smallest mobile size.
 */
 
 /* Multi-line rulesets must use whitespace for indentation consistently. */
+
+/*Default Mobile Approach*/
+
 body {
 	/* note the indentation here */
-	background-color: white;
-	color: red;
-	margin: 0;
-	padding: 0.1em  1em 1em 1em;
+
+	background-image: url(https://wallpaperaccess.com/full/379927.jpg);
+  background-repeat: no-repeat;
+	background-size: cover;
 
 
 }
 
 header{
-	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiLWHQQWudyVLthu05pSeBE1Lv3MJI3V9Q7g&usqp=CAU);
   background-size: cover;
 	overflow: auto;
+	justify-content: center;
 
 }
 
 
 
 /* One-liners are fine for very simple rulesets. */
-h1 { font-family: serif;}
+h1 {
+	font-family: serif;
+  color: white;
+
+}
+
+h2{
+	color: white;
+}
+
+p{
+	color: white;
+}
+
+#menu{
+	display: none;
+
+
+}
+
+#menu a{
+	color: white;
+
+}
+
+
+#menu a:hover {
+  background: #ddd;
+  color: red;
+}
+
+nav.open{
+
+	display: flex;
+
+}
+
+/*Default*/
 
 /*
 You will probably need at least two media queries to handle larger screens.
 Your queries should be configured to work with your content
 */
-@media screen and (min-width: 457px) {
+/*Screen changes when screen passes a minimum size*/
+@media screen and (min-width: 500px) {
 	/* Code inside media queries should be indented one step further. */
-	body { font-size: 1.2em }
+	body {
+		font-size: 1.2em;
+
+
+	 }
+
 }
+
 /*
 We don't want to see a min-width of 457px in your code
 This was chosen to match the template content.
 */
 
-body main{
-	flex-direction: row;
+main {
+	margin-top: 30px;
+}
+
+@media screen and (min-width: 336px) {
+
+#menu {
+	display: none;
+	flex-direction: column;
+	overflow: hidden;
+	display: block;
+	text-align: center;
+	top: 0;
+	width: 100%;
+}
+
+#menu a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;/*Space between anchors inside*/
+}
+
+}
+
+#menu a:hover {
+  background: #ddd;
+  color: red;
+}
+
+
+
+/**/
+
+/*Other than mobile image background*/
+@media screen and (min-width: 506px) {
+
+	body{
+		background-image: url(https://static.independent.co.uk/2021/04/25/17/urnpublicidap.org2b5654eb6b71422bb1fbd0c5b14af3b1.jpg?quality=75&width=1200&auto=webp);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
 }
