@@ -16,6 +16,7 @@ body {
 	background-image: url(https://wallpaperaccess.com/full/379927.jpg);
   background-repeat: no-repeat;
 	background-size: cover;
+	overflow: auto;
 
 
 }
@@ -64,6 +65,17 @@ p{
 nav.open{
 
 	display: flex;
+
+}
+
+.allRankingsFlexContainer{
+	display: flex;
+	color: white;
+	background-color: black;
+}
+
+.flyweightFlex{
+
 
 }
 
