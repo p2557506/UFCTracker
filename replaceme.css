@@ -70,13 +70,25 @@ nav.open{
 
 .allRankingsFlexContainer{
 	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	align-items: start;
 	color: white;
 	background-color: black;
+	width: 75%;
 }
 
 .flyweightFlex{
 
 
+}
+
+h3{
+	color: white;
+}
+
+.upcomingEvent{
+	color: white;
 }
 
 /*Default*/
