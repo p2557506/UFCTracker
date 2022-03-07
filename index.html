@@ -8,22 +8,26 @@
 	</head>
 
 	<body>
+		<div id="menuToggler">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
 
 		<header>
 			<h1>UFC Tracker</h1>
 
-			<div id="menuToggler">
-				&#8801;
-    	</div>
 
 			<nav id="menu">
-				<a href="#">Home</a>
-				<a href="#">Fighters</a>
-				<a href="#">Events</a>
-				<a href="#">About</a>
+				<a href="#home">Home</a>
+				<a href="#fighters">Fighters</a>
+				<a href="#events">Events</a>
+				<a href="#about">About</a>
 			</nav>
 
 		</header>
+
+		<main>
 
 
 		<!--
@@ -51,7 +55,11 @@
 			5 x 5 minute rounds or until the other athlete is unable to contniue. All martial arts are legal.
 		</p>
 
-		<h2>Fighters</h2>
+		<article id ="fighters">
+
+
+		  <h2>Fighters</h2>
+	  </article>
 
     <div class="allRankingsFlexContainer">
 
@@ -144,7 +152,11 @@
 			</div>
 	  </div>
 
+		<article id ="events">
+
 		<h2>Events</h2>
+
+	</article>
 
 		<h3>Upcoming Events</h3>
 		<section class ="upcomingEvent">
@@ -155,6 +167,13 @@
 				<li>MAR 26 | UFC on ESPN 33 - Blaydes VS Daukaus | T-Mobile Arena, Las Vegas, Nevada, United States</li>
 				<li>APR 29 | UFC 273 - Volkanovski VS Korean Zombie | T-Mobile Arena, Las Vegas, Nevada, United States</li>
 			</ul>
+
+			<article id="about">
+
+				<h3>About</h3>
+				<p>This page is to provide fight fans with up to date info about the UFC</p>
+
+			</article>
 
 
 
@@ -171,6 +190,7 @@
 
 
 		</section>
+	</main>
 
 
 

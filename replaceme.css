@@ -10,23 +10,53 @@ This means the default styles are for the smallest mobile size.
 
 /*Default Mobile Approach*/
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	/* note the indentation here */
 
-	background-image: url(https://wallpaperaccess.com/full/379927.jpg);
+	/*background-image: url(https://wallpaperaccess.com/full/379927.jpg);
   background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover;*/
+	background-color: black;
 	overflow: auto;
 
 
 }
+
+
+
+header,main,section,article{
+	overflow: auto;
+}
+
+
 
 header{
+	font-size: 1em;
+	min-height: 100vh;
+	background-image: url(https://mmajunkie.usatoday.com/wp-content/uploads/sites/91/2021/10/ufc-267-petr-yan-cory-sandhagen-18.jpg?w=1000&h=600&crop=1);
   background-size: cover;
+	text-align: center;
+	/*H1 goes to bootmo of page*/
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 	overflow: auto;
 	justify-content: center;
+	box-sizing: border-box;
 
 }
+
+header h1{
+	background-color: rgba(0, 0, 0, 0.7)
+	margin:0;
+	padding: 0.25em 1em;
+}
+
+
 
 
 
@@ -45,17 +75,25 @@ p{
 	color: white;
 }
 
-#menu{
+#menu {
 	display: none;
-
-
+	flex-direction: column;
+	overflow: hidden;
+	display: block;
+	text-align: center;
+	top: 0;
+	width: 100%;
 }
 
-#menu a{
+#menu a {
+	float: left;
+	display: block;
 	color: white;
-
+	text-align: center;
+	padding: 14px 16px;/*Space between anchors inside*/
 }
 
+}
 
 #menu a:hover {
   background: #ddd;
@@ -91,6 +129,10 @@ h3{
 	color: white;
 }
 
+a[href^="http"]::after {
+	content: " (" attr(href) ")";
+}
+
 /*Default*/
 
 /*
@@ -117,7 +159,7 @@ main {
 	margin-top: 30px;
 }
 
-@media screen and (min-width: 336px) {
+@media screen and (min-width: 32px) {
 
 #menu {
 	display: none;
