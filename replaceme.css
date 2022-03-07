@@ -87,6 +87,13 @@ header h1{
 	padding: 0.25em 1em;
 }
 
+/*Navigation when open*/
+header nav{
+	font-weight: 100;
+	letter-spacing: 0.2em;
+	display: flex;
+	flex-direction: column;
+}
 
 
 
@@ -105,8 +112,8 @@ h2{
 p{
 	color: white;
 }
-
-#menu {
+/*
+/#menu {
 	display: none;
 	flex-direction: column;
 	overflow: hidden;
@@ -121,10 +128,11 @@ p{
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 14px 16px;/*Space between anchors inside*/
+	padding: 14px 16px;
 }
+*/
 
-}
+
 
 #menu a:hover {
   background: #ddd;
