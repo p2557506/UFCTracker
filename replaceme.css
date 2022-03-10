@@ -81,10 +81,16 @@ header{
 
 }
 
+#search{
+	order: 1;
+	color:red;
+}
+
 header h1{
 	background-color: rgba(0, 0, 0, 0.7)
 	margin:0;
 	padding: 0.25em 1em;
+	color: red;
 }
 
 /*Navigation when open*/
@@ -93,7 +99,11 @@ header nav{
 	letter-spacing: 0.2em;
 	display: flex;
 	flex-direction: column;
+
+
 }
+
+
 
 
 
@@ -121,22 +131,22 @@ p{
 	text-align: center;
 	top: 0;
 	width: 100%;
-}
+}*/
 
 #menu a {
-	float: left;
-	display: block;
+
+
 	color: white;
 	text-align: center;
 	padding: 14px 16px;
 }
-*/
+
 
 
 
 #menu a:hover {
-  background: #ddd;
-  color: red;
+  background: red;
+  color: white;
 }
 
 nav.open{
@@ -170,6 +180,20 @@ h3{
 
 a[href^="http"]::after {
 	content: " (" attr(href) ")";
+
+}
+
+.gotopbtn{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	background: #f1c40f;
+	bottom:40px;
+	right:50px;
+}
+
+footer{
+	color: white;
 }
 
 /*Default Mobile Ends Here*/
@@ -200,7 +224,7 @@ main {
 	margin-top: 30px;
 }
 
-@media screen and (min-width: 32px) {
+@media screen and (min-width: 800px) {
 
 #menu {
 	display: none;
