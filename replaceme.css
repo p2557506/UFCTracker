@@ -12,6 +12,8 @@ This means the default styles are for the smallest mobile size.
 
 html {
 	scroll-behavior: smooth;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -24,6 +26,44 @@ body {
 	overflow: auto;
 
 
+}
+
+.twitter-icon{
+	color:white;
+	font-size: 25px;
+	transition: color:0.2s;
+	text-decoration: none;
+	margin:0px 10px;
+
+
+}
+
+.twitter-icon:hover{
+	color:#1DA1F2;
+}
+
+.youtube-icon{
+	color:white;
+	font-size: 25px;
+	transition: color:0.2s;
+	text-decoration: none;
+	margin: 0px 10px;
+
+}
+
+.youtube-icon:hover{
+	color:#c4302b ;
+}
+
+.insta-icon{
+	color: white;
+	font-size: 25px;
+	transition: color:0.2s;
+	margin: 0px 10px;
+}
+
+.insta-icon:hover{
+	color:#fccc63;
 }
 
 #menuToggler{
@@ -101,6 +141,10 @@ header nav{
 	flex-direction: column;
 
 
+}
+
+#menuToggler.open + header nav{
+	transform: translate(0);
 }
 
 
