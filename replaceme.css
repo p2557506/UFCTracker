@@ -66,6 +66,27 @@ body {
 	color:#fccc63;
 }
 
+#btnScrollToTop{
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	width: 50px;
+	height:50px;
+	border-radius: 50px;
+	background: #e62739;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	color: #ffffff;
+	outline: none;
+	cursor: pointer;
+	border: none;
+
+
+}
+
+#btnScrollToTop:active {
+	background: #cc2333;
+}
+
 #menuToggler{
 	position: fixed;
 	top: 0.5em;
@@ -209,10 +230,70 @@ nav.open{
 	width: 75%;
 }
 
-.flyweightFlex{
+.drop{
+	background: white;
+	display:flex;
+	color:grey;
+	font-size: 20px;
+	cursor: pointer;
+}
 
+.dropdown.active > .drop,
+.flyDrop:hover{
+	color: red;
+}
+
+.dropdown{
+	position:relative;
 
 }
+
+.dropdown-menu{
+	position: absolute;
+	left:0;
+	top:calc(100% + .25rem);
+	background-color: black;
+	padding: .75rem;
+	border-radius: .25rem;
+	box-shadow: 0 2px 5px 0 rgba(0, 0 , 0 ,.4);
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(-10px);
+	transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+
+}
+
+.img-df{
+	width: 50px;
+}
+
+.img-pyan{
+	width:50px;
+}
+
+.img-avolk{
+	width:50px;
+}
+
+.img-colives{
+	width: 50px;
+}
+
+.img-kusman{
+	width: 50px;
+}
+
+.dropdown.active > .drop + .dropdown-menu{
+
+	opacity:1;
+	transform: translateY(0);
+	pointer-events: auto;
+
+}
+
+
+
+
 
 h3{
 	color: white;

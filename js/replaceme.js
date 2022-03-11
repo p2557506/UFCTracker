@@ -15,6 +15,33 @@ menuToggler.addEventListener('click', ev => {
   console.log("Fix")
 });
 
+btnScrollToTop.addEventListener('click', function() {
+  window.scrollTo({
+    left:0,
+    top: 0,
+    behaviour: "smooth"
+  });
+});
+
+document.addEventListener('click', ev => {
+  const isDropdownButton = ev.target.matches("[data-dropdown-button]")
+  if (!isDropdownButton && ev.target.closest('[data-dropdown]') != null) return
+
+let currentDropdown
+  if(isDropdownButton){
+    currentDropdown = ev.target.closest('[data-dropdown]')
+    currentDropdown.classList.toggle('active')
+  }
+
+  document.querySelectorAll("[data-dropdown].active").forEach(dropdown => {
+
+    if(dropdown === currentDropdown) return
+    dropdown.classList.remove('active')
+
+  });
+
+})
+
 for (const element of document.querySelectorAll('nav a')) {
 	element.addEventListener('click', ev => {
 		menuToggler.classList.remove('open');
