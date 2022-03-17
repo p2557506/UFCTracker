@@ -83,7 +83,7 @@ body {
 .social-menu ul li:nth-child(5) a:hover {
     background-color: #0077B5;
 }
-
+/*
 .twitter-icon{
 	color:white;
 	font-size: 25px;
@@ -120,7 +120,7 @@ body {
 
 .insta-icon:hover{
 	color:#fccc63;
-}
+} */
 
 #btnScrollToTop{
 	position: fixed;
@@ -292,10 +292,11 @@ nav.open{
 	color:grey;
 	font-size: 20px;
 	cursor: pointer;
+
 }
 
-.dropdown.active > .drop,
-.flyDrop:hover{
+.dropdown +.drop:focus,
+.drop:hover{
 	color: red;
 }
 
@@ -305,59 +306,70 @@ nav.open{
 }
 
 .dropdown-menu{
+
 	position: absolute;
-	left:0;
-	top:calc(100% + .25rem);
+	left: 0;
+	top: calc(100% + .25rem);
 	background-color: black;
 	padding: .75rem;
 	border-radius: .25rem;
-	box-shadow: 0 2px 5px 0 rgba(0, 0 , 0 ,.4);
+	box-shadow: 0 2px 5px 0 rgba(0,0,0, .1);
 	opacity: 0;
 	pointer-events: none;
 	transform: translateY(-10px);
 	transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 
+
 }
 
-.img-df{
-	width: 50px;
-}
+.dropdown > .drop:focus + .dropdown-menu{
 
-.img-pyan{
-	width:50px;
-}
+	opacity: 1;
+	transform: translateY(0);
+	pointer-events: auto;
 
-.img-avolk{
-	width:50px;
-}
 
-.img-colives{
-	width: 50px;
 }
-
-.img-kusman{
-	width: 50px;
-}
-
-.img-isanya{
-	width: 50px;
-}
-
-.img-gtex{
-	width: 50px;
-}
-
-.img-fngannou{
-	width:50px;
-}
-
-.dropdown.active > .drop + .dropdown-menu{
+/* .dropdown.active > .drop + .dropdown-menu{
 
 	opacity:1;
 	transform: translateY(0);
 	pointer-events: auto;
 
+} */
+
+.img-df{
+	width: 100px;
 }
+
+.img-pyan{
+	width: 100px;
+}
+
+.img-avolk{
+	width: 100px;
+}
+
+.img-colives{
+	width: 100px;
+}
+
+.img-kusman{
+	width: 100px;
+}
+
+.img-isanya{
+	width: 100px;
+}
+
+.img-gtex{
+	width: 100px;
+}
+
+.img-fngannou{
+	width: 100px;
+}
+
 
 
 
