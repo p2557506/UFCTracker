@@ -383,10 +383,10 @@ h3{
 	color: white;
 }
 
-a[href^="http"]::after {
+/* a[href^="http"]::after {
 	content: " (" attr(href) ")";
 
-}
+} */
 
 .gotopbtn{
 	position: fixed;
