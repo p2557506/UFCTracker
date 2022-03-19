@@ -131,26 +131,7 @@ body {
 	color:#fccc63;
 } */
 
-#btnScrollToTop{
-	position: fixed;
-	right: 10px;
-	bottom: 10px;
-	width: 50px;
-	height:50px;
-	border-radius: 50px;
-	background: #e62739;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-	color: #ffffff;
-	outline: none;
-	cursor: pointer;
-	border: none;
 
-
-}
-
-#btnScrollToTop:active {
-	background: #cc2333;
-}
 
 #menuToggler{
 	position: fixed;
@@ -355,7 +336,7 @@ nav.open{
 
 }
 
-.poundForPound{
+#poundForPound{
 	color: white;
 
 
@@ -419,14 +400,7 @@ h3{
 
 } */
 
-.gotopbtn{
-	position: fixed;
-	width: 50px;
-	height: 50px;
-	background: #f1c40f;
-	bottom:40px;
-	right:50px;
-}
+
 
 footer{
 	color: white;
@@ -489,24 +463,30 @@ Your queries should be configured to work with your content
 		 }
 
 		 header{
-			 font-size: 1em;
-			 min-height: 100vh;
+
 			 background-image: url(https://hdwallsource.com/img/2018/8/khabib-nurmagomedov-ufc-wallpaper-65433-67659-hd-wallpapers.jpg);
-			 background-size: cover;
-			 text-align: center;
-			 /*H1 goes to bootmo of page*/
-			 display: flex;
-			 flex-direction: column;
-			 justify-content: flex-end;
-			 overflow: auto;
-			 justify-content: center;
-			 box-sizing: border-box;
+
 		 }
 
-		 .grid{
-			 display: grid;
-			 grid-template-columns: repeat(2,1fr);
+		 header nav{
+
+			 flex-direction: row;
+			 transform: none;
+			 transition: none;
+			 height: auto;
+
+
+
+
 		 }
+
+		 header nav a{
+			 flex-grow: 1;
+		 }
+
+
+
+
 
 		 .allRankingsFlexContainer{
 			 display: grid;
@@ -519,7 +499,7 @@ Your queries should be configured to work with your content
 
 	 @media screen and (min-width: 1024px){
 
-		 .menu{
+		 /* .menu{
 			 display: grid;
 			 grid-template-columns: repeat(5,1fr);
 
@@ -530,7 +510,9 @@ Your queries should be configured to work with your content
 
 		 .content{
 			 grid-area: content;
-		 }
+		 } */
+
+
 
 
 
@@ -538,7 +520,7 @@ Your queries should be configured to work with your content
 
 
 
-}
+
 
 @media screen and (min-width: 1410px){
 
@@ -570,7 +552,7 @@ main {
 
 @media screen and (min-width: 800px) {
 
-#menu {
+/* #menu {
 	display: none;
 	flex-direction: column;
 	overflow: hidden;
@@ -585,10 +567,10 @@ main {
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 14px 16px;/*Space between anchors inside*/
+	padding: 14px 16px;/*Space between anchors inside
 }
 
-}
+
 
 #menu a:hover {
   background: #ddd;
