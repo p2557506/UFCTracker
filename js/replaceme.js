@@ -10,28 +10,17 @@
 
 console.log("Obviously, you should replace this with some event handlers.")
 
-menuToggler.addEventListener('click', ev => {
-  menu.classList.toggle('open');
-  console.log("Fix")
-});
 
-btnScrollToTop.addEventListener('click', function() {
-  window.scrollTo({
-    left:0,
-    top: 0,
-    behaviour: "smooth"
-  });
-});
 
 //JS dropdown
 
-document.addEventListener('click', e => {
-  const isDropdownButton = e.target.matches("[data-dropdown-button]")
-  if (!isDropdownButton && e.target.closest('[data-dropdown]') != null) return
+document.addEventListener('click', ev => {
+  const isDropdownButton = ev.target.matches("[data-dropdown-button]")
+  if (!isDropdownButton && ev.target.closest('[data-dropdown]') != null) return
 
 let currentDropdown
   if(isDropdownButton){
-    currentDropdown = e.target.closest('[data-dropdown]')
+    currentDropdown = ev.target.closest('[data-dropdown]')
     currentDropdown.classList.toggle('active')
   }
 
@@ -44,8 +33,14 @@ let currentDropdown
 
 })
 
+//MenuToggler
+menuToggler.addEventListener('click', ev => {
+  menuToggler.classList.toggle('open');
+  console.log("Fix")
+});
+
 for (const element of document.querySelectorAll('nav a')) {
-	element.addEventListener('click', e => {
+	element.addEventListener('click', ev => {
 		menuToggler.classList.remove('open');
 	});
 }
