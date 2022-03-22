@@ -1,6 +1,6 @@
 # CTEC3905 ASSIGNMENT
 
-Welcome. This is your assignment repository.
+<!-- Welcome. This is your assignment repository.
 
 In this file, we will expect a brief description of your project in [markdown](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) format.
 Try to keep it to a maximum of about 300 words.
@@ -13,7 +13,11 @@ Make some specific reference to how you have adapted your site for different scr
 If there are any parts of your code or user interface that need further explanation, you can include that here.
 If anything is broken or doesn't quite work properly, you may explain what it SHOULD do.
 
-You **must** include references (including links) to any external resources/videos/code examples that you have used here.
+You **must** include references (including links) to any external resources/videos/code examples that you have used here. -->
+
+References:
+https://www.youtube.com/watch?v=S-VeYcOCFZw
+
 
 ## Things to do
 

@@ -6,7 +6,9 @@ We want to see a sensible mobile-first, responsive design.
 This means the default styles are for the smallest mobile size.
 */
 
+
 /* Multi-line rulesets must use whitespace for indentation consistently. */
+
 
 /*Default Mobile Approach*/
 
@@ -18,7 +20,6 @@ html {
 
 body {
 	/* note the indentation here */
-
 	/*background-image: url(https://wallpaperaccess.com/full/379927.jpg);
   background-repeat: no-repeat;
 	background-size: cover;*/
@@ -26,72 +27,77 @@ body {
 	background-color: black;
 	overflow: auto;
 	padding: 10px 10px;
-
-
-
 }
-
-
 
 .social-menu ul {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0;
-    margin: 0;
-    display: flex;
-
-
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 0;
+	margin: 0;
+	display: flex;
 }
+
 .social-menu ul li {
-    list-style: none;
-    margin: 0 5px;
-}
-.social-menu ul li .fa {
-    color: #000000;
-    font-size: 25px;
-    line-height: 50px;
-    transition: .5s;
-}
-.social-menu ul li .fa:hover {
-    color: #ffffff;
-}
-.social-menu ul li a {
-    position: relative;
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: white;
-    text-align: center;
-    transition: 0.5s;
-    transform: translate(0,0px);
-    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
-}
-.social-menu ul li a:hover {
-    transform: rotate(0deg) skew(0deg) translate(0, -10px);
-}
-.social-menu ul li:nth-child(1) a:hover {
-    background-color: #3b5999;
-}
-.social-menu ul li:nth-child(2) a:hover {
-    background-color: #55acee;
-}
-.social-menu ul li:nth-child(3) a:hover {
-    background-color: #e4405f;
-}
-.social-menu ul li:nth-child(4) a:hover {
-    background-color: #cd201f;
-}
-.social-menu ul li:nth-child(5) a:hover {
-    background-color: #0077B5;
+	list-style: none;
+	margin: 0 5px;
 }
 
-#search{
-	order: 1;
-	color:red;
+.social-menu ul li .fa {
+	color: #000000;
+	font-size: 25px;
+	line-height: 50px;
+	transition: .5s;
 }
+
+.social-menu ul li .fa:hover {
+	color: #ffffff;
+}
+
+.social-menu ul li a {
+	position: relative;
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: white;
+	text-align: center;
+	transition: 0.5s;
+	transform: translate(0, 0px);
+	box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+
+.social-menu ul li a:hover {
+	transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+
+.social-menu ul li:nth-child(1) a:hover {
+	background-color: #3b5999;
+}
+
+.social-menu ul li:nth-child(2) a:hover {
+	background-color: #55acee;
+}
+
+.social-menu ul li:nth-child(3) a:hover {
+	background-color: #e4405f;
+}
+
+.social-menu ul li:nth-child(4) a:hover {
+	background-color: #cd201f;
+}
+
+.social-menu ul li:nth-child(5) a:hover {
+	background-color: #0077B5;
+}
+
+#search {
+	order: 1;
+	color: red;
+}
+
+
 /*
 .twitter-icon{
 	color:white;
@@ -131,15 +137,12 @@ body {
 	color:#fccc63;
 } */
 
-
-
-#menuToggler{
+#menuToggler {
 	position: fixed;
 	top: 0.5em;
 	right: 0.5em;
 	height: 1em;
 	width: 1em;
-
 	/*Puts menu in flex box*/
 	display: flex;
 	flex-direction: column;
@@ -154,29 +157,30 @@ body {
 	background: red;
 	transition: transform 0.3s;
 }
+
 #menuToggler.open div:nth-child(1) {
 	transform: translateY(0.3em) rotate(45deg);
 }
+
 #menuToggler.open div:nth-child(3) {
 	transform: translateY(-0.5em) rotate(-45deg);
 }
+
 #menuToggler.open div:nth-child(2) {
 	opacity: 0;
 }
 
-
-
-header,main,section,{
+header,
+main,
+section {
 	overflow: auto;
 }
 
-
-
-header{
+header {
 	font-size: 1em;
 	min-height: 100vh;
 	background-image: url(https://wallpaperaccess.com/full/379927.jpg);
-  background-size: cover;
+	background-size: cover;
 	text-align: center;
 	/*H1 goes to bootmo of page*/
 	display: flex;
@@ -185,7 +189,6 @@ header{
 	overflow: auto;
 	justify-content: center;
 	box-sizing: border-box;
-
 }
 
 header nav {
@@ -204,7 +207,7 @@ header nav {
 	z-index: 15;
 }
 
-#menuToggler.open + header nav{
+#menuToggler.open+header nav {
 	transform: translate(0);
 }
 
@@ -216,36 +219,34 @@ header nav a {
 	padding: 0.5em 0;
 }
 
-
-header h1{
-	background-color: rgba(0, 0, 0, 0.7)
-	margin:0;
+header h1 {
+	background-color: rgba(0, 0, 0, 0.7);
+	margin: 0;
 	padding: 0.25em 1em;
 	color: red;
 }
 
+
+
 /*Navigation when open*/
 
 
-
-
-
-
-
 /* One-liners are fine for very simple rulesets. */
+
 h1 {
 	font-family: serif;
-  color: white;
-
-}
-
-h2{
 	color: white;
 }
 
-p{
+h2 {
 	color: white;
 }
+
+p {
+	color: white;
+}
+
+
 /*
 /#menu {
 	display: none;
@@ -258,89 +259,108 @@ p{
 }*/
 
 .menu a {
-
-
 	color: white;
 	text-align: center;
 	padding: 14px 16px;
 }
 
-
-
-
 .menu a:hover {
-  background: red;
-  color: white;
+	background: red;
+	color: white;
 }
 
-nav.open{
-
+nav.open {
 	display: flex;
+}
+
+.welcomeHeading{
+	background-color: red;
+	width:100px;
+}
+
+
+
+#fighters{
+	background-color: red;
+	width:190px;
 
 }
 
-.allRankingsFlexContainer{
+#poundHeading{
+	background-color: red;
+	width:200px;
+
+}
+
+.eventsHeading{
+	background-color: red;
+	width:100px;
+}
+
+.aboutHeading{
+	background-color: red;
+	width: 80px;
+}
+
+.allRankingsFlexContainer {
 	display: flex;
-	flex-wrap:wrap;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: start;
 	color: white;
 	background-color: black;
 	width: 75%;
+
 	/* display: grid;
 	grid-template-columns: repeat(4, 1fr); */
 }
 
-.drop{
+.drop {
 	background: white;
-	display:flex;
-	color:grey;
+	display: flex;
+	color: grey;
 	font-size: 20px;
 	cursor: pointer;
-
 }
 
-.dropdown +.drop:focus,
-.drop:hover{
+.dropdown+.drop:focus,
+.drop:hover {
 	color: red;
 }
 
-.dropdown{
-	position:relative;
-
+.dropdown {
+	position: relative;
 }
 
-.dropdown-menu{
-
+.dropdown-menu {
 	position: absolute;
 	left: 0;
 	top: calc(100% + .25rem);
 	background-color: black;
 	padding: .75rem;
 	border-radius: .25rem;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0, .1);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
 	opacity: 0;
 	pointer-events: none;
 	transform: translateY(-10px);
 	transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
-
-
 }
 
-.dropdown > .drop:focus + .dropdown-menu{
-
+.dropdown>.drop:focus+.dropdown-menu {
 	opacity: 1;
 	transform: translateY(0);
 	pointer-events: auto;
-
-
 }
 
-#poundForPound{
+#poundForPound {
 	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
 
 }
+
 
 /* .dropdown.active > .drop + .dropdown-menu{
 
@@ -350,156 +370,142 @@ nav.open{
 
 } */
 
-.img-df{
+.img-df , .img-pyan , .img-avolk , .img-colives , .img-kusman , .img-isanya , .img-gtex , .img-fngannou{
 	width: 100px;
 }
 
-.img-pyan{
-	width: 100px;
-}
-
-.img-avolk{
-	width: 100px;
-}
-
-.img-colives{
-	width: 100px;
-}
-
-.img-kusman{
-	width: 100px;
-}
-
-.img-isanya{
-	width: 100px;
-}
-
-.img-gtex{
-	width: 100px;
-}
-
-.img-fngannou{
-	width: 100px;
-}
-
-
-
-
-
-
-h3{
+#events{
 	color: white;
 }
 
-.upcomingEvent{
+
+
+
+
+
+
+
+
+
+
+
+h3 {
 	color: white;
 }
+
+.upcomingEvent {
+	color: white;
+}
+
 
 /* a[href^="http"]::after {
 	content: " (" attr(href) ")";
 
 } */
 
-
-
-footer{
+footer {
 	color: white;
 }
+
 
 /*Default Mobile Ends Here*/
 
 
 /*Natural Breakpoints begin here*/
+
+
 /*
 You will probably need at least two media queries to handle larger screens.
 Your queries should be configured to work with your content
 */
+
+
 /*Screen changes when screen passes a minimum size*/
+
 @media screen and (min-width: 425px) {
 	/* Code inside media queries should be indented one step further. */
 	body {
 		font-size: 1.2em;
+	}
+	header {
+		font-size: 1em;
+		min-height: 100vh;
+		background-image: url(https://pbs.twimg.com/media/Dyqnm7hUwAAbPWK.jpg);
+		background-size: cover;
+		text-align: center;
+		/*H1 goes to bootmo of page*/
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		overflow: auto;
+		justify-content: center;
+		box-sizing: border-box;
+	}
+}
+
+@media screen and (min-width: 642px) {
+	header {
+		font-size: 1em;
+		min-height: 100vh;
+		background-image: url(https://i.pinimg.com/736x/a8/99/68/a89968c2ae39f4820464d300622f5751.jpg);
+		background-size: cover;
+		text-align: center;
+		/*H1 goes to bootmo of page*/
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		overflow: auto;
+		justify-content: center;
+		box-sizing: border-box;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	body{
+		font-size: 1.3em;
+	}
+	#menuToggler {
+		display: none;
+	}
 
 
-	 }
+	header {
+		background-image: url(https://hdwallsource.com/img/2018/8/khabib-nurmagomedov-ufc-wallpaper-65433-67659-hd-wallpapers.jpg);
+	}
+	header nav {
+		flex-direction: row;
+		transform: none;
+		transition: none;
+		height: auto;
+	}
+	header nav a {
+		flex-grow: 1;
+	}
+	.allRankingsFlexContainer {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		width: auto;
+	}
 
-	 header{
-	 	font-size: 1em;
-	 	min-height: 100vh;
-	 	background-image: url(https://pbs.twimg.com/media/Dyqnm7hUwAAbPWK.jpg);
-	   background-size: cover;
-	 	text-align: center;
-	 	/*H1 goes to bootmo of page*/
-	 	display: flex;
-	 	flex-direction: column;
-	 	justify-content: flex-end;
-	 	overflow: auto;
-	 	justify-content: center;
-	 	box-sizing: border-box;
-
-	 }
-	 @media screen and (min-width: 642px){
-
-		 header{
-			 font-size: 1em;
-			 min-height: 100vh;
-			 background-image: url(https://i.pinimg.com/736x/a8/99/68/a89968c2ae39f4820464d300622f5751.jpg);
-			 background-size: cover;
-			 text-align: center;
-			 /*H1 goes to bootmo of page*/
-			 display: flex;
-			 flex-direction: column;
-			 justify-content: flex-end;
-			 overflow: auto;
-			 justify-content: center;
-			 box-sizing: border-box;
-		 }
-	 }
-
-	 @media screen and (min-width: 768px){
-
-		 #menuToggler{
-			 display: none;
-		 }
-
-		 header{
-
-			 background-image: url(https://hdwallsource.com/img/2018/8/khabib-nurmagomedov-ufc-wallpaper-65433-67659-hd-wallpapers.jpg);
-
-		 }
-
-		 header nav{
-
-			 flex-direction: row;
-			 transform: none;
-			 transition: none;
-			 height: auto;
+	#poundForPound{
+		align-items: center;
 
 
+	}
+
+	.img-df , .img-pyan , .img-avolk , .img-colives , .img-kusman , .img-isanya , .img-gtex , .img-fngannou{
+		width: 150px;
+	}
+
+	#poundForPound .img-kusman{
+		width:200px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
 
 
-		 }
-
-		 header nav a{
-			 flex-grow: 1;
-		 }
-
-
-
-
-
-		 .allRankingsFlexContainer{
-			 display: grid;
-			 grid-template-columns: repeat(4 ,1fr);
-			 width:auto;
-		 }
-
-
-	 }
-
-	 @media screen and (min-width: 1024px){
-
-		 /* .menu{
+	/* .menu{
 			 display: grid;
 			 grid-template-columns: repeat(5,1fr);
 
@@ -511,33 +517,34 @@ Your queries should be configured to work with your content
 		 .content{
 			 grid-area: content;
 		 } */
+}
 
-
-
-
-
-	 }
-
-
-
-
-
-@media screen and (min-width: 1410px){
-
-	header{
+@media screen and (min-width: 1410px) {
+	header {
 		font-size: 1em;
-	 	min-height: 100vh;
-	 	background-image: url(https://mmajunkie.usatoday.com/wp-content/uploads/sites/91/2021/10/ufc-267-petr-yan-cory-sandhagen-6.jpg?w=1000&h=600&crop=1);
-	   background-size: cover;
-	 	text-align: center;
-	 	/*H1 goes to bootmo of page*/
-	 	display: flex;
-	 	flex-direction: column;
-	 	justify-content: flex-end;
-	 	overflow: auto;
-	 	justify-content: center;
-	 	box-sizing: border-box;
+		min-height: 100vh;
+		background-image: url(https://mmajunkie.usatoday.com/wp-content/uploads/sites/91/2021/10/ufc-267-petr-yan-cory-sandhagen-6.jpg?w=1000&h=600&crop=1);
+		background-size: cover;
+		text-align: center;
+		/*H1 goes to bootmo of page*/
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		overflow: auto;
+		justify-content: center;
+		box-sizing: border-box;
 	}
+
+	.img-df , .img-pyan , .img-avolk , .img-colives , .img-kusman , .img-isanya , .img-gtex , .img-fngannou{
+		width: 200px;
+	}
+
+	#poundForPound .img-kusman{
+		width:250px;
+	}
+
+
+
 }
 
 
@@ -546,13 +553,9 @@ We don't want to see a min-width of 457px in your code
 This was chosen to match the template content.
 */
 
-main {
-	margin-top: 30px;
-}
 
-@media screen and (min-width: 800px) {
-
-/* #menu {
+@media print {
+	/* #menu {
 	display: none;
 	flex-direction: column;
 	overflow: hidden;
@@ -580,9 +583,7 @@ main {
 
 
 /**/
+}
+
 
 /*Other than mobile image background*/
-@media screen and (min-width: 506px) {
-
-
-}

@@ -1,427 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>UFC Knowledge</title>
-		<link rel="stylesheet" href="replaceme.css">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>UFC Knowledge</title>
+      <link rel="stylesheet" href="styles.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+         rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <div class="social-menu">
+         <ul>
+            <li><a href="https://www.facebook.com/UFC/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/ufc?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/ufc/" target = "_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCvgfXK4nTYKudb0rFR6noLA" target = "_blank"><i class="fa fa-youtube"></i></a></li>
+         </ul>
+      </div>
+      <!--<button id="btnScrollToTop"></button>
+         <i class="material-icons">arrow_upward</i>
 
-	</head>
-
-	<body>
-		<div class="social-menu">
-  <ul>
-    <li><a href="https://www.facebook.com/UFC/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-    <li><a href="https://twitter.com/ufc?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter"></i></a></li>
-    <li><a href="https://www.instagram.com/ufc/" target = "_blank"><i class="fa fa-instagram"></i></a></li>
-    <li><a href="https://www.youtube.com/channel/UCvgfXK4nTYKudb0rFR6noLA" target = "_blank"><i class="fa fa-youtube"></i></a></li>
-
-  </ul>
-</div>
-		<!--<button id="btnScrollToTop"></button>
-		<i class="material-icons">arrow_upward</i>
-
-		<a class="twitter-icon" href="" target="_blank">
+         <a class="twitter-icon" href="" target="_blank">
 
 
-			<ion-icon name="logo-twitter"></ion-icon>
+         	<ion-icon name="logo-twitter"></ion-icon>
 
-		</a>
-		<a class="youtube-icon" href="" target="_blank">
-			<ion-icon name="logo-youtube"></ion-icon>
+         </a>
+         <a class="youtube-icon" href="" target="_blank">
+         	<ion-icon name="logo-youtube"></ion-icon>
 
-		</a>
+         </a>
 
-		<a class="insta-icon" href="" target="_blank">
-			<ion-icon name="logo-instagram"></ion-icon>
+         <a class="insta-icon" href="" target="_blank">
+         	<ion-icon name="logo-instagram"></ion-icon>
 
-		</a>-->
+         </a>-->
+      <div id="menuToggler" class="no-print">
+         <div></div>
+         <div></div>
+         <div></div>
+      </div>
+      <header id="home">
+         <h1>UFC Tracker</h1>
+         <div class="content">
+            <nav class="menu">
+               <a href="#home">Home</a>
+               <a href="#fighters">Fighter Rankings</a>
+               <a href="#poundForPound">Pound for Pound</a>
+               <a href="#events">Events</a>
+               <a href="#about">About</a>
+            </nav>
+            <div id="search">
+               <label for="info">Search: </label>
+               <input id= "info" aria-label= "search">
+               <button id= "searchButton">Go</button>
+            </div>
+         </div>
+      </header>
 
-		<div id="menuToggler" class="no-print">
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
+			<main>
+         <!--
+            You will need to replace this content with your own.
 
-	<header id="home">
-		<h1>UFC Tracker</h1>
+            Your final site should have a maximum of four HTML documents.
+            Though a 'single page app' will probably have only one html file.
+            Either way, your site should provide the facility to navigate around the main sections.
 
+            Consider accessibility.
+            Make sure your HTML has a clear structure.
+            Use semantic elements to define the main parts of your page.
 
-		<div class="content">
-
-			<nav class="menu">
-				<a href="#home">Home</a>
-				<a href="#fighters">Fighter Rankings</a>
-				<a href="#poundForPound">Pound for Pound</a>
-				<a href="#events">Events</a>
-				<a href="#about">About</a>
-			</nav>
-		<section id="search">
-
-			<label for="info">Search: </label>
-			<input id= "info" aria-label= "search">
-			<button id= "searchButton">Go</button>
-		</section>
-
-		</div>
-
-		</header>
-
-		<main>
-
-
-		<!--
-		You will need to replace this content with your own.
-
-		Your final site should have a maximum of four HTML documents.
-		Though a 'single page app' will probably have only one html file.
-		Either way, your site should provide the facility to navigate around the main sections.
-
-		Consider accessibility.
-		Make sure your HTML has a clear structure.
-		Use semantic elements to define the main parts of your page.
-
-		Remember to keep the indentation consistent and VALIDATE your code regularly!
-		-->
-
-		<h2>Welcome</h2>
-		<p>
-			Intro: This webpage will explain all to know about the Ultimate Fighting Championship.
-			Ranked fighters, upcoming cards and upcoming prospects to look out for.
-		</p>
-		<p>
-			What is the UFC?
-			An organisation where fighters engage in unarmed combat over a period of either 3 x 5 minute rounds
-			5 x 5 minute rounds or until the other athlete is unable to contniue. All martial arts are legal.
-		</p>
-
-		<div id ="fighters">
+            Remember to keep the indentation consistent and VALIDATE your code regularly!
+            -->
 
 
-		  <h2>Fighter Rankings</h2>
-	  </div>
-
-    <div class="allRankingsFlexContainer">
+			<div id = "welcome">
+				<div class="welcomeHeading">
 
 
-		  <div class="flyweightFlex">
-				<h3>Flyweight</h3>
-
-				<ul>
-					<li><img class ="img-df" src="img/df.png" alt="deiveson figueiredo">Champ: Deiveson Figueiredo</li>
-
-				</ul>
-					<div class="dropdown" data-dropdown>
-						<button class="drop" data-dropdown-button> V </button>
-						<div class="dropdown-menu">
-							<ol>
-
-						<li>Brandon Moreno</li>
-						<li>Askar Akarov</li>
-						<li>Alexandre Pantoja</li>
-						<li>Alex Perez</li>
-						<li>Brandon Royval</li>
-						<li>Kai Kara France</li>
-						<li>Rogerio Bontorin</li>
-						<li>Matheus Nicolau</li>
-						<li>Matt Schnell</li>
-						<li>David Dvorak</li>
+         <h2>Welcome</h2>
+			 </div>
+         <p>
+            Intro: This webpage will explain all to know about the Ultimate Fighting Championship.
+            Ranked fighters, upcoming cards and upcoming prospects to look out for.
+         </p>
+         <p>
+            What is the UFC?
+            An organisation where fighters engage in unarmed combat over a period of either 3 x 5 minute rounds
+            5 x 5 minute rounds or until the other athlete is unable to contniue. All martial arts are legal.
+         </p>
+			 </div>
+         <div id ="fighters">
 
 
-						  </ol>
-						</div>
+            <h2>Fighter Rankings</h2>
+
+         </div>
+         <div class="allRankingsFlexContainer">
+            <div class="flyweightFlex">
+               <h3>Flyweight</h3>
+               <ul>
+                  <li><img class ="img-df" src="img/df.png" alt="deiveson figueiredo">Champ: Deiveson Figueiredo</li>
+               </ul>
+               <div class="dropdown" data-dropdown>
+                  <button class="drop" data-dropdown-button> V </button>
+                  <div class="dropdown-menu">
+                     <ol>
+                        <li>Brandon Moreno</li>
+                        <li>Askar Akarov</li>
+                        <li>Alexandre Pantoja</li>
+                        <li>Alex Perez</li>
+                        <li>Brandon Royval</li>
+                        <li>Kai Kara France</li>
+                        <li>Rogerio Bontorin</li>
+                        <li>Matheus Nicolau</li>
+                        <li>Matt Schnell</li>
+                        <li>David Dvorak</li>
+                     </ol>
+                  </div>
+               </div>
+            </div>
+            <div class="bantamweightFlex">
+               <h3>Bantamweight</h3>
+               <ul>
+                  <li><img class ="img-pyan" src="img/pyan.png" alt="petr yan">Champ: Petr Yan</li>
+               </ul>
+               <div class="dropdown" data-dropdown>
+                  <button class="drop" data-dropdown-button> V </button>
+                  <div class="dropdown-menu">
+                     <ol>
+                        <li>Aljamain Sterling</li>
+                        <li>TJ Dillashaw</li>
+                        <li>Jose Aldo</li>
+                        <li>Cory Sandhagen</li>
+                        <li>Rob Font</li>
+                        <li>Merab Dvalishvili</li>
+                        <li>Dominick Cruz</li>
+                        <li>Marlon Vera</li>
+                        <li>Pedro Munhoz</li>
+                        <li>Marlon Moraes</li>
+                     </ol>
+                  </div>
+               </div>
+            </div>
+            <div class="featherweightFlex">
+               <h3>Featherweight</h3>
+               <ul>
+                  <li><img class="img-avolk" src="img/avolk.png" alt="alexander volkanovski">Champ: Alexander Volkanovski</li>
+               </ul>
+               <div class="dropdown" data-dropdown>
+                  <button class="drop" data-dropdown-button> V </button>
+                  <div class="dropdown-menu">
+                     <ol>
+                        <li>Max Holloway</li>
+                        <li>Brian Ortega</li>
+                        <li>Yair Rodriguez</li>
+                        <li>Chang Sung Jung</li>
+                        <li>Calvin Kattar</li>
+                        <li>Josh Emmett</li>
+                        <li>Arnold Allen</li>
+                        <li>Giga Chikadze</li>
+                        <li>Bryce Mitchell</li>
+                        <li>Dan Ige</li>
+                     </ol>
+                  </div>
+               </div>
+            </div>
+            <div class="lightweightFlex">
+               <h3>Lightweight</h3>
+               <ul>
+                  <li><img class ="img-colives" src="img/colives.png" alt="charles olivera">Champ: Charles Olivera</li>
+               </ul>
+               <div class="dropdown" data-dropdown>
+                  <button class="drop" data-dropdown-button> V </button>
+                  <div class="dropdown-menu">
+                     <ol>
+                        <li>Justin Gaethje</li>
+                        <li>Dustin Poirier</li>
+                        <li>Islam Makhachev</li>
+                        <li>Beneil Dariush</li>
+                        <li>Michael Chandler</li>
+                        <li>Rafael Dos Anjos</li>
+                        <li>Tony Ferguson</li>
+                        <li>Dan Hooker</li>
+                        <li>Gregor Gillespie</li>
+                        <li>Conor Mcgregor</li>
+                     </ol>
+                  </div>
+               </div>
+            </div>
+            <div class="welterweightFlex">
+               <h3>Welterweight</h3>
+               <ul>
+                  <li><img class="img-kusman" src="img/kusman.png" alt="kamaru usman">Champ: Kamaru Usman</li>
+               </ul>
+               <div class="dropdown" data-dropdown>
+                  <button class="drop" data-dropdown-button> V </button>
+                  <div class="dropdown-menu">
+                     <ol>
+                        <li>Colby Covington</li>
+                        <li>Gilbert Burns</li>
+                        <li>Leon Edwards</li>
+                        <li>Vicente Luque</li>
+                        <li>Belal Muhammad</li>
+                        <li>Stephen Thompson</li>
+                        <li>Jorge Masvidal</li>
+                        <li>Sean Brady</li>
+                        <li>Neil Magny</li>
+                        <li>Michael Chiesa</li>
+                     </ol>
+                  </div>
+               </div>
+            </div>
+            <div class="middleweightFlex">
+               <h3>Middleweight</h3>
+               <ul>
+                  <li><img class="img-isanya" src="img/isanya.png" alt="israel adesanya">Champ: Israel Adesanya</li>
+               </ul>
+               <div class="dropdown" data-dropdown>
+                  <button class="drop" data-dropdown-button> V </button>
+                  <div class="dropdown-menu">
+                     <ol>
+                        <li>Robert Whitaker</li>
+                        <li>Jared Cannonier</li>
+                        <li>Marvin Vettori</li>
+                        <li>Derek Brunson</li>
+                        <li>Sean Strickland</li>
+                        <li>Paulo Costa</li>
+                        <li>Jack Hermansson</li>
+                        <li>Darren Till</li>
+                        <li>Uriah Hall</li>
+                        <li>Kelvin Gastelum</li>
+                     </ol>
+                  </div>
+               </div>
+            </div>
+            <div class="lightheavyweightFlex">
+               <h3>Light Heavyweight</h3>
+               <ul>
+                  <li><img class="img-gtex" src="img/gtex.png" alt="">Champ: Glover Texeira</li>
+               </ul>
+               <div class="dropdown" data-dropdown>
+                  <button class="drop" data-dropdown-button> V </button>
+                  <div class="dropdown-menu">
+                     <ol>
+                        <li>Jan Blachowiz</li>
+                        <li>Jiri Prochazcha</li>
+                        <li>Alexsander Rakic</li>
+                        <li>Anhony Smith</li>
+                        <li>Thiago Santos</li>
+                        <li>Magomed Ankalaev</li>
+                        <li>Dominick Reyes</li>
+                        <li>Volkan Oezdemir</li>
+                        <li>Nikita Krylov</li>
+                        <li>Jamahal Hill</li>
+                     </ol>
+                  </div>
+               </div>
+            </div>
+            <div class="heavyweightFlex">
+               <h3>Heavyweight</h3>
+               <ul>
+                  <li><img class="img-fngannou" src="img/fngannou.png" alt="francis ngannou">Champ: Francis Ngannou</li>
+               </ul>
+               <div class="dropdown" data-dropdown>
+                  <button class="drop" data-dropdown-button> V </button>
+                  <div class="dropdown-menu">
+                     <ol>
+                        <li>Cyril Gane</li>
+                        <li>Stipe Miocic</li>
+                        <li>Tai Tuivasa</li>
+                        <li>Curtis Blaydes</li>
+                        <li>Derrick Lewis</li>
+                        <li>Alexander Volkov</li>
+                        <li>Jairzinho Rozenstruik</li>
+                        <li>Chris Daukaus</li>
+                        <li>Marcin Tybura</li>
+                        <li>Shamil Abdurakhimov</li>
+                     </ol>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="grid">
+            <div id="poundForPound">
+							<div id="poundHeading">
+
+               <h2>Pound For Pound</h2>
+						 </div>
+               <ul>
+                  <li><img class="img-kusman" src="img/kusman.png" alt="kamaru usman"></li>
+                  <li>Pound for Pound: Kamaru Usman</li>
+               </ul>
+               <ol>
+                  <li>Israel Adesanya</li>
+                  <li>Alexander Volkanovski</li>
+                  <li>Francis Ngannou</li>
+                  <li>Charles Oliveira</li>
+                  <li>Max Holloway</li>
+                  <li>Jon Jones</li>
+                  <li>Dustin Poirier</li>
+                  <li>Petr Yan</li>
+                  <li>Glover Teixeira</li>
+               </ol>
+            </div>
+            <div id="events">
+							<div class="eventsHeading">
+
+               <h2>Events</h2>
+						 </div>
+               <h3>Upcoming Events</h3>
+               <ul>
+                  <li>MAR 5 | UFC 272 - Covington VS Masvidal | T-Mobile Arena, Las Vegas, Nevada, United States</li>
+                  <li>MAR 12 | UFC Fight Night 203 - Santos VS Ankalaev | T-Mobile Arena, Las Vegas, Nevada, United States</li>
+                  <li>MAR 19 | UFC Fight Night 204 - Volkov VS Aspinall | T-Mobile Arena, Las Vegas, Nevada, United States</li>
+                  <li>MAR 26 | UFC on ESPN 33 - Blaydes VS Daukaus | T-Mobile Arena, Las Vegas, Nevada, United States</li>
+                  <li>APR 29 | UFC 273 - Volkanovski VS Korean Zombie | T-Mobile Arena, Las Vegas, Nevada, United States</li>
+               </ul>
+            </div>
+         </div>
+         <article id="about">
+					 <div class="aboutHeading">
+
+            <h3>About</h3>
 					</div>
-
-
-		  </div>
-
-
-			<div class="bantamweightFlex">
-				<h3>Bantamweight</h3>
-
-				<ul>
-					<li><img class ="img-pyan" src="img/pyan.png" alt="petr yan">Champ: Petr Yan</li>
-				</ul>
-
-					<div class="dropdown" data-dropdown>
-						<button class="drop" data-dropdown-button> V </button>
-						<div class="dropdown-menu">
-							<ol>
-
-								<li>Aljamain Sterling</li>
-								<li>TJ Dillashaw</li>
-								<li>Jose Aldo</li>
-								<li>Cory Sandhagen</li>
-								<li>Rob Font</li>
-								<li>Merab Dvalishvili</li>
-								<li>Dominick Cruz</li>
-								<li>Marlon Vera</li>
-								<li>Pedro Munhoz</li>
-								<li>Marlon Moraes</li>
-
-							</ol>
-
-
-			</div>
-		</div>
-	</div>
-
-
-			<div class="featherweightFlex">
-				<h3>Featherweight</h3>
-
-				<ul>
-					<li><img class="img-avolk" src="img/avolk.png" alt="alexander volkanovski">Champ: Alexander Volkanovski</li>
-
-				</ul>
-				<div class="dropdown" data-dropdown>
-					<button class="drop" data-dropdown-button> V </button>
-					<div class="dropdown-menu">
-
-				<ol>
-
-
-			<li>Max Holloway</li>
-			<li>Brian Ortega</li>
-			<li>Yair Rodriguez</li>
-			<li>Chang Sung Jung</li>
-			<li>Calvin Kattar</li>
-			<li>Josh Emmett</li>
-			<li>Arnold Allen</li>
-			<li>Giga Chikadze</li>
-			<li>Bryce Mitchell</li>
-			<li>Dan Ige</li>
-
-
-
-				</ol>
-			</div>
-		</div>
-	</div>
-
-
-			<div class="lightweightFlex">
-				<h3>Lightweight</h3>
-
-				<ul>
-					<li><img class ="img-colives" src="img/colives.png" alt="charles olivera">Champ: Charles Olivera</li>
-
-				</ul>
-
-				<div class="dropdown" data-dropdown>
-					<button class="drop" data-dropdown-button> V </button>
-					<div class="dropdown-menu">
-
-
-
-				<ol>
-					<li>Justin Gaethje</li>
-					<li>Dustin Poirier</li>
-					<li>Islam Makhachev</li>
-					<li>Beneil Dariush</li>
-					<li>Michael Chandler</li>
-					<li>Rafael Dos Anjos</li>
-					<li>Tony Ferguson</li>
-					<li>Dan Hooker</li>
-					<li>Gregor Gillespie</li>
-					<li>Conor Mcgregor</li>
-
-				</ol>
-
-			</div>
-		</div>
-	</div>
-
-			<div class="welterweightFlex">
-				<h3>Welterweight</h3>
-
-				<ul>
-					<li><img class="img-kusman" src="img/kusman.png" alt="kamaru usman">Champ: Kamaru Usman</li>
-
-				</ul>
-				<div class="dropdown" data-dropdown>
-					<button class="drop" data-dropdown-button> V </button>
-					<div class="dropdown-menu">
-
-				<ol>
-					<li>Colby Covington</li>
-					<li>Gilbert Burns</li>
-					<li>Leon Edwards</li>
-					<li>Vicente Luque</li>
-					<li>Belal Muhammad</li>
-					<li>Stephen Thompson</li>
-					<li>Jorge Masvidal</li>
-					<li>Sean Brady</li>
-					<li>Neil Magny</li>
-					<li>Michael Chiesa</li>
-				</ol>
-
-			</div>
-		</div>
-	</div>
-
-			<div class="middleweightFlex">
-				<h3>Middleweight</h3>
-
-				<ul>
-					<li><img class="img-isanya" src="img/isanya.png" alt="israel adesanya">Champ: Israel Adesanya</li>
-
-				</ul>
-				<div class="dropdown" data-dropdown>
-					<button class="drop" data-dropdown-button> V </button>
-					<div class="dropdown-menu">
-				<ol>
-					<li>Robert Whitaker</li>
-					<li>Jared Cannonier</li>
-					<li>Marvin Vettori</li>
-					<li>Derek Brunson</li>
-					<li>Sean Strickland</li>
-					<li>Paulo Costa</li>
-					<li>Jack Hermansson</li>
-					<li>Darren Till</li>
-					<li>Uriah Hall</li>
-					<li>Kelvin Gastelum</li>
-				</ol>
-
-			</div>
-		</div>
-	</div>
-
-			<div class="lightheavyweightFlex">
-				<h3>Light Heavyweight</h3>
-
-				<ul>
-					<li><img class="img-gtex" src="img/gtex.png" alt="">Champ: Glover Texeira</li>
-
-				</ul>
-				<div class="dropdown" data-dropdown>
-					<button class="drop" data-dropdown-button> V </button>
-					<div class="dropdown-menu">
-				<ol>
-					<li>Jan Blachowiz</li>
-					<li>Jiri Prochazcha</li>
-					<li>Alexsander Rakic</li>
-					<li>Anhony Smith</li>
-					<li>Thiago Santos</li>
-					<li>Magomed Ankalaev</li>
-					<li>Dominick Reyes</li>
-					<li>Volkan Oezdemir</li>
-					<li>Nikita Krylov</li>
-					<li>Jamahal Hill</li>
-				</ol>
-
-			</div>
-		</div>
-	</div>
-
-			<div class="heavyweightFlex">
-				<h3>Heavyweight</h3>
-
-				<ul>
-					<li><img class="img-fngannou" src="img/fngannou.png" alt="francis ngannou">Champ: Francis Ngannou</li>
-
-				</ul>
-				<div class="dropdown" data-dropdown>
-					<button class="drop" data-dropdown-button> V </button>
-					<div class="dropdown-menu">
-				<ol>
-					<li>Cyril Gane</li>
-					<li>Stipe Miocic</li>
-					<li>Tai Tuivasa</li>
-					<li>Curtis Blaydes</li>
-					<li>Derrick Lewis</li>
-					<li>Alexander Volkov</li>
-					<li>Jairzinho Rozenstruik</li>
-					<li>Chris Daukaus</li>
-					<li>Marcin Tybura</li>
-					<li>Shamil Abdurakhimov</li>
-				</ol>
-
-			</div>
-	  </div>
-		</div>
-	</div>
-
-		<div class="grid">
-
-			<div id="poundForPound">
-
-
-			<h2>Pound For Pound</h2>
-			<ul>
-				<li><img class="img-kusman" src="img/kusman.png" alt="kamaru usman"></li>
-				<li>Pound for Pound: Kamaru Usman</li>
-			</ul>
-
-				<ol>
-					<li>Israel Adesanya</li>
-					<li>Alexander Volkanovski</li>
-					<li>Francis Ngannou</li>
-					<li>Charles Oliveira</li>
-					<li>Max Holloway</li>
-					<li>Jon Jones</li>
-					<li>Dustin Poirier</li>
-					<li>Petr Yan</li>
-					<li>Glover Teixeira</li>
-
-				</ol>
-
-			</div>
-
-  <div id="events">
-
-		<h2>Events</h2>
-
-
-		<h3>Upcoming Events</h3>
-		<section class ="upcomingEvent">
-			<ul>
-				<li>MAR 5 | UFC 272 - Covington VS Masvidal | T-Mobile Arena, Las Vegas, Nevada, United States</li>
-				<li>MAR 12 | UFC Fight Night 203 - Santos VS Ankalaev | T-Mobile Arena, Las Vegas, Nevada, United States</li>
-				<li>MAR 19 | UFC Fight Night 204 - Volkov VS Aspinall | T-Mobile Arena, Las Vegas, Nevada, United States</li>
-				<li>MAR 26 | UFC on ESPN 33 - Blaydes VS Daukaus | T-Mobile Arena, Las Vegas, Nevada, United States</li>
-				<li>APR 29 | UFC 273 - Volkanovski VS Korean Zombie | T-Mobile Arena, Las Vegas, Nevada, United States</li>
-			</ul>
-
-		</div>
-		</div>
-
-			<article id="about">
-
-				<h3>About</h3>
-				<p>This page is to provide fight fans with up to date info about the UFC</p>
-
-			</article>
-
-
-
-			<!--<ul>
-				<li>Main Event: Masvidal VS Covington (Welterweight)</li>
-
-				<li>Co-Main Event: Dos Anjos VS Fiziev (Lightweight)</li>
-
-				<li>Barboza VS Mitchell (Featherweight)</li>
-				<li>Holland VS Oliveira (Welterweight)</li>
-					<li>Holland VS Oliveira (Welterweight)</li>
-				<li>Spivak VS Hardy (Heavyweight)</li>
-			</ul>-->
-
-
-		</section>
-	</main>
-
-	<footer><h4>UFC Tracker(c)</h4>
-	Copyright (c) 2022 Copyright Holder All Rights Reserved.</footer>
-
-
-
-
-
-		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-		<script src="js/replaceme.js"></script>
-	</body>
+            <p>This page is to provide fight fans with up to date info about the UFC</p>
+         </article>
+         <!--<ul>
+            <li>Main Event: Masvidal VS Covington (Welterweight)</li>
+
+            <li>Co-Main Event: Dos Anjos VS Fiziev (Lightweight)</li>
+
+            <li>Barboza VS Mitchell (Featherweight)</li>
+            <li>Holland VS Oliveira (Welterweight)</li>
+            	<li>Holland VS Oliveira (Welterweight)</li>
+            <li>Spivak VS Hardy (Heavyweight)</li>
+            </ul>-->
+      </main>
+      <footer>
+         <h4>UFC Tracker(c)</h4>
+         Copyright (c) 2022 Copyright Holder All Rights Reserved.
+      </footer>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script src="js/scripts.js"></script>
+   </body>
 </html>
