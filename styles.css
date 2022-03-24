@@ -407,6 +407,9 @@ footer {
 	color: white;
 }
 
+ul {
+	list-style: none;
+}
 
 /*Default Mobile Ends Here*/
 

@@ -8,39 +8,38 @@
 // Your code should be DRY, if you have repeated code, consider refactoring as a function with arguments for example.
 // We like to see what you can do. Be creative.
 
-console.log("Obviously, you should replace this with some event handlers.")
+
 
 
 
 //JS dropdown
-
 document.addEventListener('click', ev => {
-  const isDropdownButton = ev.target.matches("[data-dropdown-button]")
-  if (!isDropdownButton && ev.target.closest('[data-dropdown]') != null) return
+    const isDropdownButton = ev.target.matches("[data-dropdown-button]")
+    if (!isDropdownButton && ev.target.closest('[data-dropdown]') != null) return
 
-let currentDropdown
-  if(isDropdownButton){
-    currentDropdown = ev.target.closest('[data-dropdown]')
-    currentDropdown.classList.toggle('active')
-  }
+    let currentDropdown
+    if (isDropdownButton) {
+        currentDropdown = ev.target.closest('[data-dropdown]')
+        currentDropdown.classList.toggle('active')
+    }
 
-  document.querySelectorAll("[data-dropdown].active").forEach(dropdown => {
+    document.querySelectorAll("[data-dropdown].active").forEach(dropdown => {
 
-    if(dropdown === currentDropdown) return
-    dropdown.classList.remove('active')
+        if (dropdown === currentDropdown) return
+        dropdown.classList.remove('active')
 
-  })
+    })
 
 })
 
 //MenuToggler
 menuToggler.addEventListener('click', ev => {
-  menuToggler.classList.toggle('open');
-  console.log("Fix")
+    menuToggler.classList.toggle('open');
+    console.log("Fix")
 });
 
 for (const element of document.querySelectorAll('nav a')) {
-	element.addEventListener('click', ev => {
-		menuToggler.classList.remove('open');
-	});
+    element.addEventListener('click', ev => {
+        menuToggler.classList.remove('open');
+    });
 }
