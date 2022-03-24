@@ -275,20 +275,20 @@ nav.open {
 
 .welcomeHeading{
 	background-color: red;
-	width:100px;
+	width:120px;
 }
 
 
 
-#fighters{
+.fighters{
 	background-color: red;
-	width:190px;
+	width:230px;
 
 }
 
-#poundHeading{
+.poundHeading{
 	background-color: red;
-	width:200px;
+	width:250px;
 
 }
 
@@ -503,6 +503,10 @@ Your queries should be configured to work with your content
 }
 
 @media screen and (min-width: 1024px) {
+
+	body{
+		font-size: 1.4em;
+	}
 
 
 	/* .menu{
