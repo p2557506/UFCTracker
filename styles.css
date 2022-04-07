@@ -92,10 +92,57 @@ body {
 	background-color: #0077B5;
 }
 
-#search {
-	order: 1;
-	color: red;
+#search-wrapper {
+	position: relative;
 }
+#searchWrapper::after {
+    content: '🔍';
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+
+#searchBar {
+    width: 50%;
+    height: 22px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+#fightersList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+
+}
+.fighter {
+    list-style-type: none;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        'FirstName'
+        'LastName';
+    text-align: left;
+
+}
+
+.fighter > h2 {
+    grid-area: FirstName;
+    margin-bottom: 0px;
+}
+
+.fighter > p {
+    grid-area: LastName;
+    margin: 0;
+    margin-top: -18px;
+}
+
+
 
 
 /*
@@ -376,8 +423,8 @@ nav.open {
 
 #events{
 	color: white;
-	background-image: url(https://www.cnet.com/a/img/resize/d1f8dec06c26cd46sb610e62ef600209db51c05ba/2022/03/01/99aac66f-74bc-4a72-99e2-5e4488714874/ufc272.jpg?auto=webp&fit=crop&height=675&width=1200);
-	background-size: cover;
+	/* background-image: url(https://www.cnet.com/a/img/resize/d1f8dec06c26cd46sb610e62ef600209db51c05ba/2022/03/01/99aac66f-74bc-4a72-99e2-5e4488714874/ufc272.jpg?auto=webp&fit=crop&height=675&width=1200);
+	background-size: cover; */
 }
 
 

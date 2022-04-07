@@ -7,7 +7,7 @@
 // Accessing APIs is a great option if it fits with your project, or you can work with your own, local data.
 // Your code should be DRY, if you have repeated code, consider refactoring as a function with arguments for example.
 // We like to see what you can do. Be creative.
-
+"use strict";
 
 
 
@@ -43,3 +43,60 @@ for (const element of document.querySelectorAll('nav a')) {
         menuToggler.classList.remove('open');
     });
 }
+
+//Searchbar
+const fightersList = document.getElementById('fightersList');
+const searchBar = document.getElementById('searchBar');
+let ufcFighters = [];
+console.log(searchBar);
+
+searchBar.addEventListener('keyup', (ev) => {
+  const searchString = ev.target.value.toLowerCase();
+  const filteredFighters = ufcFighters.filter(( fighter) => {
+    return (
+      fighter.FirstName.toLowerCase().includes(searchString) ||
+     fighter.LastName.toLowerCase().includes(searchString)
+   );
+  });
+  console.log(filteredFighters);
+});
+
+const loadFighters = async () => {
+  try{
+  const res = await fetch('https://api.sportsdata.io/v3/mma/scores/json/Fighters?key=26f2a845a9e84ac69d7e7e36755bd98c');
+  ufcFighters = await res.json();
+  displayFighters(ufcFighters);
+  console.log(ufcFighters);
+}catch(err) {
+  console.error(err);
+}
+};
+
+const displayFighters = (fighters) => {
+  const htmlString = fighters
+  .map((fighter) => {
+    return `
+
+    <li class="fighter">
+    <h2>${fighter.FirstName}</h2>
+    <p>LastName: ${fighter.LastName}</p>
+    <p>Wins: ${fighter.Wins}</p>
+    <p>Losses: ${fighter.Losses}</p>
+    </li>
+
+    `;
+
+  })
+  .join('');
+  fightersList.innerHtml = htmlString;
+};
+
+loadFighters();
+
+
+//
+// fetch('https://api.sportsdata.io/v3/mma/scores/json/Fighters?key=26f2a845a9e84ac69d7e7e36755bd98c')
+// .then(res => res.json())
+//
+//
+// .then(data => console.log(data))
