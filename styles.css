@@ -275,7 +275,7 @@ nav.open {
 
 .welcomeHeading{
 	background-color: red;
-	width:120px;
+	width:130px;
 }
 
 
@@ -376,6 +376,8 @@ nav.open {
 
 #events{
 	color: white;
+	background-image: url(https://www.cnet.com/a/img/resize/d1f8dec06c26cd46sb610e62ef600209db51c05ba/2022/03/01/99aac66f-74bc-4a72-99e2-5e4488714874/ufc272.jpg?auto=webp&fit=crop&height=675&width=1200);
+	background-size: cover;
 }
 
 
@@ -407,9 +409,7 @@ footer {
 	color: white;
 }
 
-ul {
-	list-style: none;
-}
+
 
 /*Default Mobile Ends Here*/
 
