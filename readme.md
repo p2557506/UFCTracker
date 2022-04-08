@@ -17,17 +17,8 @@ You **must** include references (including links) to any external resources/vide
 
 References:
 https://www.youtube.com/watch?v=S-VeYcOCFZw
+https://www.youtube.com/watch?v=wxz5vJ1BWrc&ab_channel=JamesQQuick
 
-
-## Things to do
-
-- Replace the content inside [index.html](index.html) with your own structured HTML.
-- Replace the [replaceme.css](replaceme.css) and [replaceme.js](js/replaceme.js) files with your own files.
-- Update the `<link>` and `<script>` elements to point to your new files.
-- Replace the contents of this file (readme.md) with your own short project description as detailed above.
-
->We don't expect there to be much left of the original content in these files once you are done.
-It should be all your own code.
 
 Short project description:
-In this project I plan to create a UFC website that will allow anyone to get up to date with relevant information regarding the UFC. For example, the website will show upcoming fight cards, ranked fighters in each division and upcoming prospects to look out for in the future.
+In this project I plan to create a UFC website that will allow anyone to get up to date with relevant information regarding the UFC. For example, the website will show upcoming fight cards, ranked fighters in each division and a search bar capable of finding any fighter in the UFC.
