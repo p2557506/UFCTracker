@@ -29,22 +29,20 @@ body {
 	padding: 10px;
 }
 
-
-#home h1{
+#home h1 {
 	padding-top: 20px;
 	padding-bottom: 80px;
 }
 
 .social-menu ul {
 	position: absolute;
-
 	left: 50%;
 	transform: translate(-50%, -50%);
 	padding: 0;
 	margin: 0;
 	display: flex;
-	margin-left:auto;
-    margin-right:auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .social-menu ul li {
@@ -99,40 +97,82 @@ body {
 .social-menu ul li:nth-child(5) a:hover {
 	background-color: #0077B5;
 }
-/*SearchBar*/
-.container{
-	padding: 40px;
-    margin: 0 auto;
-    max-width: 1000px;
-    text-align: center;
 
+
+/*SearchBar*/
+
+.container {
+	padding: 40px;
+	margin: 0 auto;
+	max-width: 1000px;
+	text-align: center;
 }
+
 #fightersList {
+	padding-inline-start: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 20px;
+}
+
+#search-wrapper {
+	position: relative;
+}
+
+#searchWrapper::after {
+	content: '🔍';
+	position: absolute;
+	top: 7px;
+	right: 15px;
+}
+
+#searchBar {
+	width: 50%;
+	height: 22px;
+	border-radius: 3px;
+	border: 1px solid #eaeaea;
+	padding: 5px 10px;
+	font-size: 12px;
+}
+
+.fighter {
+	list-style-type: none;
+	background-color: #eaeaea;
+	border-radius: 3px;
+	padding: 10px 20px;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-areas: 'FirstName' 'LastName';
+	text-align: left;
+}
+
+.fighter>h2 {
+	grid-area: FirstName;
+	margin-bottom: 10px;
+	color: black;
+}
+
+.fighter>p {
+	grid-area: LastName;
+	margin: 0;
+	margin-top: -18px;
+	color: black;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+/* #ufcEventBox {
 	padding-inline-start: 0;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 	grid-gap: 20px;
 
 }
-#search-wrapper {
-	position: relative;
-}
-#searchWrapper::after {
-    content: '🔍';
-    position: absolute;
-    top: 7px;
-    right: 15px;
-}
 
-#searchBar {
-    width: 50%;
-    height: 22px;
-    border-radius: 3px;
-    border: 1px solid #eaeaea;
-    padding: 5px 10px;
-    font-size: 12px;
-}
-.fighter {
+.ufcEvent {
     list-style-type: none;
     background-color: #eaeaea;
     border-radius: 3px;
@@ -140,73 +180,28 @@ body {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-areas:
-        'FirstName'
-        'LastName'
-				'W';
+        'Name'
+        'Day';
     text-align: left;
 
 
 
 }
 
-.fighter > h2 {
-    grid-area: FirstName;
+.ufcEvent > h2 {
+    grid-area: Name;
     margin-bottom: 10px;
 		color: black;
 }
 
-.fighter > p {
-    grid-area: LastName;
+.ufcEvent > p {
+    grid-area: Event;
     margin: 0;
     margin-top: -18px;
 		color: black;
 }
 
-*{
-	box-sizing: border-box;
-}
-
-
-
-
-/*
-.twitter-icon{
-	color:white;
-	font-size: 25px;
-	transition: color:0.2s;
-	text-decoration: none;
-	margin:0px 10px;
-
-
-}
-
-.twitter-icon:hover{
-	color:#1DA1F2;
-}
-
-.youtube-icon{
-	color:white;
-	font-size: 25px;
-	transition: color:0.2s;
-	text-decoration: none;
-	margin: 0px 10px;
-
-}
-
-.youtube-icon:hover{
-	color:#c4302b ;
-}
-
-.insta-icon{
-	color: white;
-	font-size: 25px;
-	transition: color:0.2s;
-	margin: 0px 10px;
-}
-
-.insta-icon:hover{
-	color:#fccc63;
-} */
+ */
 
 #menuToggler {
 	position: fixed;
@@ -241,19 +236,12 @@ body {
 	opacity: 0;
 }
 
-header,
-main,
-section {
-	overflow: auto;
-}
-
 header {
 	font-size: 1em;
 	min-height: 100vh;
 	background-image: url(https://wallpaperaccess.com/full/379927.jpg);
 	background-size: cover;
 	text-align: center;
-	/*H1 goes to bootmo of page*/
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
@@ -296,7 +284,6 @@ header h1 {
 	padding: 0.25em 1em;
 	color: red;
 }
-
 
 
 /*Navigation when open*/
@@ -344,31 +331,27 @@ nav.open {
 	display: flex;
 }
 
-.welcomeHeading{
+.welcomeHeading {
 	background-color: red;
-	width:130px;
+	width: 130px;
 }
 
-
-
-#fighters{
+#fighters {
 	background-color: red;
-	width:230px;
-
+	width: 230px;
 }
 
-.poundHeading{
+.poundHeading {
 	background-color: red;
-	width:250px;
-
+	width: 250px;
 }
 
-.eventsHeading{
+.eventsHeading {
 	background-color: red;
-	width:100px;
+	width: 100px;
 }
 
-.aboutHeading{
+.aboutHeading {
 	background-color: red;
 	width: 80px;
 }
@@ -381,7 +364,6 @@ nav.open {
 	color: white;
 	background-color: black;
 	width: 75%;
-
 	/* display: grid;
 	grid-template-columns: repeat(4, 1fr); */
 }
@@ -420,7 +402,6 @@ nav.open {
 .dropdown>.drop:focus+.dropdown-menu {
 	opacity: 1;
 	transform: translateY(0);
-	pointer-events: auto;
 }
 
 #poundForPound {
@@ -428,8 +409,6 @@ nav.open {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
-
 }
 
 
@@ -441,26 +420,22 @@ nav.open {
 
 } */
 
-.img-df , .img-pyan , .img-avolk , .img-colives , .img-kusman , .img-isanya , .img-gtex , .img-fngannou{
+.img-df,
+.img-pyan,
+.img-avolk,
+.img-colives,
+.img-kusman,
+.img-isanya,
+.img-gtex,
+.img-fngannou {
 	width: 100px;
 }
 
-#events{
+#events {
 	color: white;
 	/* background-image: url(https://www.cnet.com/a/img/resize/d1f8dec06c26cd46sb610e62ef600209db51c05ba/2022/03/01/99aac66f-74bc-4a72-99e2-5e4488714874/ufc272.jpg?auto=webp&fit=crop&height=675&width=1200);
 	background-size: cover; */
 }
-
-
-
-
-
-
-
-
-
-
-
 
 h3 {
 	color: white;
@@ -479,7 +454,6 @@ h3 {
 footer {
 	color: white;
 }
-
 
 
 /*Default Mobile Ends Here*/
@@ -535,23 +509,18 @@ Your queries should be configured to work with your content
 }
 
 @media screen and (min-width: 768px) {
-	body{
+	body {
 		font-size: 1.3em;
 	}
-	#home h1{
+	#home h1 {
 		padding-top: 90px;
 	}
-
-	.social-menu ul li a{
+	.social-menu ul li a {
 		transform: translate(0, 170px);
 	}
-
-
 	#menuToggler {
 		display: none;
 	}
-
-
 	header {
 		background-image: url(https://hdwallsource.com/img/2018/8/khabib-nurmagomedov-ufc-wallpaper-65433-67659-hd-wallpapers.jpg);
 	}
@@ -569,29 +538,28 @@ Your queries should be configured to work with your content
 		grid-template-columns: repeat(4, 1fr);
 		width: auto;
 	}
-
-	#poundForPound{
+	#poundForPound {
 		align-items: center;
-
-
 	}
-
-	.img-df , .img-pyan , .img-avolk , .img-colives , .img-kusman , .img-isanya , .img-gtex , .img-fngannou{
+	.img-df,
+	.img-pyan,
+	.img-avolk,
+	.img-colives,
+	.img-kusman,
+	.img-isanya,
+	.img-gtex,
+	.img-fngannou {
 		width: 150px;
 	}
-
-	#poundForPound .img-kusman{
-		width:200px;
+	#poundForPound .img-kusman {
+		width: 200px;
 	}
 }
 
 @media screen and (min-width: 1024px) {
-
-	body{
+	body {
 		font-size: 1.4em;
 	}
-
-
 	/* .menu{
 			 display: grid;
 			 grid-template-columns: repeat(5,1fr);
@@ -621,29 +589,31 @@ Your queries should be configured to work with your content
 		justify-content: center;
 		box-sizing: border-box;
 	}
-
-	.img-df , .img-pyan , .img-avolk , .img-colives , .img-kusman , .img-isanya , .img-gtex , .img-fngannou{
+	.img-df,
+	.img-pyan,
+	.img-avolk,
+	.img-colives,
+	.img-kusman,
+	.img-isanya,
+	.img-gtex,
+	.img-fngannou {
 		width: 200px;
 	}
-
-	#poundForPound .img-kusman{
-		width:250px;
+	#poundForPound .img-kusman {
+		width: 250px;
 	}
-
-
-
 }
+
 @media screen and (min-width: 2560px) {
-	body{
+	body {
 		font-size: 1.6em;
 	}
-	.welcomeHeading{
+	.welcomeHeading {
 		width: 160px;
 	}
-	.eventsHeading{
+	.eventsHeading {
 		width: 120px;
 	}
-
 }
 
 
@@ -651,7 +621,6 @@ Your queries should be configured to work with your content
 We don't want to see a min-width of 457px in your code
 This was chosen to match the template content.
 */
-
 
 @media print {
 	/* #menu {
@@ -683,6 +652,5 @@ This was chosen to match the template content.
 
 /**/
 }
-
 
 /*Other than mobile image background*/
