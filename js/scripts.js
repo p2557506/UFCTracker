@@ -44,21 +44,23 @@ for (const element of document.querySelectorAll('nav a')) {
     });
 }
 
-//Searchbar
+//Searchbar & UFC API
 const fightersList = document.getElementById('fightersList');
 const searchBar = document.getElementById('searchBar');
 let ufcFighters = [];
-console.log(searchBar);
+//console.log(searchBar);
 
 searchBar.addEventListener('keyup', (ev) => {
   const searchString = ev.target.value.toLowerCase();
-  const filteredFighters = ufcFighters.filter(( fighter) => {
+
+  const filteredFighters = ufcFighters.filter((fighter) => {
     return (
       fighter.FirstName.toLowerCase().includes(searchString) ||
      fighter.LastName.toLowerCase().includes(searchString)
    );
   });
-  console.log(filteredFighters);
+  displayFighters(filteredFighters);
+  //console.log(filteredFighters);
 });
 
 const loadFighters = async () => {
@@ -78,17 +80,16 @@ const displayFighters = (fighters) => {
     return `
 
     <li class="fighter">
-    <h2>${fighter.FirstName}</h2>
-    <p>LastName: ${fighter.LastName}</p>
-    <p>Wins: ${fighter.Wins}</p>
-    <p>Losses: ${fighter.Losses}</p>
+    <h2> ${fighter.LastName} </h2>
+    <p>FirstName: ${fighter.FirstName}</p>
+
     </li>
 
     `;
 
   })
   .join('');
-  fightersList.innerHtml = htmlString;
+  fightersList.innerHTML = htmlString;
 };
 
 loadFighters();

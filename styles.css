@@ -26,17 +26,25 @@ body {
 	margin: 0 auto;
 	background-color: black;
 	overflow: auto;
-	padding: 10px 10px;
+	padding: 10px;
+}
+
+
+#home h1{
+	padding-top: 20px;
+	padding-bottom: 80px;
 }
 
 .social-menu ul {
 	position: absolute;
-	top: 10%;
+
 	left: 50%;
 	transform: translate(-50%, -50%);
 	padding: 0;
 	margin: 0;
 	display: flex;
+	margin-left:auto;
+    margin-right:auto;
 }
 
 .social-menu ul li {
@@ -64,7 +72,7 @@ body {
 	background-color: white;
 	text-align: center;
 	transition: 0.5s;
-	transform: translate(0, 0px);
+	transform: translate(0, 100px);
 	box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -91,7 +99,21 @@ body {
 .social-menu ul li:nth-child(5) a:hover {
 	background-color: #0077B5;
 }
+/*SearchBar*/
+.container{
+	padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
 
+}
+#fightersList {
+	padding-inline-start: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 20px;
+
+}
 #search-wrapper {
 	position: relative;
 }
@@ -110,13 +132,6 @@ body {
     padding: 5px 10px;
     font-size: 12px;
 }
-#fightersList {
-    padding-inline-start: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 20px;
-
-}
 .fighter {
     list-style-type: none;
     background-color: #eaeaea;
@@ -126,20 +141,29 @@ body {
     grid-template-columns: 3fr 1fr;
     grid-template-areas:
         'FirstName'
-        'LastName';
+        'LastName'
+				'W';
     text-align: left;
+
+
 
 }
 
 .fighter > h2 {
     grid-area: FirstName;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+		color: black;
 }
 
 .fighter > p {
     grid-area: LastName;
     margin: 0;
     margin-top: -18px;
+		color: black;
+}
+
+*{
+	box-sizing: border-box;
 }
 
 
@@ -514,6 +538,15 @@ Your queries should be configured to work with your content
 	body{
 		font-size: 1.3em;
 	}
+	#home h1{
+		padding-top: 90px;
+	}
+
+	.social-menu ul li a{
+		transform: translate(0, 170px);
+	}
+
+
 	#menuToggler {
 		display: none;
 	}
@@ -598,6 +631,18 @@ Your queries should be configured to work with your content
 	}
 
 
+
+}
+@media screen and (min-width: 2560px) {
+	body{
+		font-size: 1.6em;
+	}
+	.welcomeHeading{
+		width: 160px;
+	}
+	.eventsHeading{
+		width: 120px;
+	}
 
 }
 
